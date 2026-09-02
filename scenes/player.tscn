@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c7erlg3d47576"]
+
+[ext_resource type="Texture2D" uid="uid://5e2g7f6imkmh" path="res://pixilart-drawing.png" id="1_3vyb7"]
+[ext_resource type="AudioStream" uid="uid://cofm5ve66s5br" path="res://freesound_community-gib-sound-97000.mp3" id="2_g2els"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
+size = Vector2(64, 65)
+
+[node name="player" type="CharacterBody2D" unique_id=282208067]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1954695162]
+position = Vector2(2.3841858e-07, -0.5)
+scale = Vector2(0.64, 0.65)
+texture = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=323140265]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_3vyb7")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2113288996]
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
+[node name="sfx_death" type="AudioStreamPlayer" parent="." unique_id=1079569764]
+stream = ExtResource("2_g2els")

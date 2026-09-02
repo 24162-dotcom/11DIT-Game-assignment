@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b2mhnvn74dmwq"]
+
+[ext_resource type="AudioStream" uid="uid://ck8npujj0f0el" path="res://aug_26_jazz.mp3" id="1_05ggv"]
+
+[node name="Music" type="AudioStreamPlayer" unique_id=1803712579]
+stream = ExtResource("1_05ggv")
+autoplay = true
